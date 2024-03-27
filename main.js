@@ -51,7 +51,8 @@ def main_test():
         nonlocal test_num
         if inp.count("\\n") == 0:
             mock.append(inp)
-        mock.extend(inp.split("\\n"))
+        else:
+            mock.extend(inp.split("\\n"))
         test_num += 1
         print(f"Test #{test_num}: ", end="")
         try:
